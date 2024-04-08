@@ -1,0 +1,853 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .3s;
+    /* scroll-behavior: smooth; */
+    font-weight: normal;
+    font-family: "jeju";
+    position: relative;
+    animation: show 0.5s;
+}
+
+.abs {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 100px;
+}
+
+.abs img {
+    width: 50px;
+    height: 50px;
+}
+
+@font-face {
+    font-family: "jeju";
+    src: url(../fonts/jejumyeongjo.ttf);
+}
+
+@font-face {
+    font-family: "cal";
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+
+.fakeheader {
+    height: 120px;
+    width: 425px;
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+#burger, [for=burger] {
+    display: none;
+}
+
+/*                  Шапка                 */
+
+header {
+    border-bottom: 2px solid black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.pd {
+    padding: 60px 0;
+}
+
+.cont {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.cont2 {
+    width: 1903px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 0 20px;
+}
+
+nav a {
+    color: black;
+    font-size: 32px;
+}
+
+nav a:hover {
+    color: #E4C000;
+
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons img {
+    width: 54px;
+    height: 54px;
+}
+
+/*              Шапка конец              */
+
+/*                 Баннер                 */
+
+.block1 {
+    background: url(../image/banner/bg.jpg);
+    background-size: cover;
+    height: 89vh;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+
+.div1 h1 {
+    font-size: 128px;
+    color: white;
+    font-family: "cal";
+}
+
+.div1 p {
+    font-size: 48px;
+    color: white;
+    width: 537px;
+}
+
+.div1 a {
+    background-color: #E4C000;
+    font-size: 36px;
+    padding: 20px 2px;
+    width: 362px;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+}
+
+.div1 a:hover {
+    background-color: #553000;
+    color: white;
+}
+
+/*              Баннер конец              */
+
+/*                Каталог                 */
+
+.block2 {
+    background: url(../image/katalog/bg1.jpg);
+    background-size: cover;
+}
+
+.div2 h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.katalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 59px 59px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 20px;
+    gap: 25px 0;
+}
+
+.card img {
+    width: 344px;
+    height: 214px;
+}
+
+.card h3 {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+}
+
+.card p {
+    color: black;
+    font-size: 24px;
+}
+
+.card a {
+    color: white;
+    font-size: 24px;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.card a:hover {
+    background-color: gray;
+}
+
+/*              Каталог конец             */
+
+/*                Контакты                */
+
+.block3 {
+    background-color: #141414;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px 0;
+}
+
+.div3 h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.div3 .support {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.div3 .support_info {
+    background-color: #ff7b0069;
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+
+.div3 .support a {
+    font-size: 24px;
+    color: white;
+}
+
+.div3 .support span {
+    color: white;
+}
+
+.div3 .support span:hover {
+    color: black;
+}
+
+.div3 p {
+    color: white;
+    font-size: 24px;
+}
+
+.icons {
+    display: flex;
+    gap: 0 10px;
+}
+
+/*             Контакты конец             */
+
+/*                 Подвал                 */
+
+footer {
+    border-top: 2px solid black;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    font-size: 20px;
+}
+
+/*              Подвал конец              */
+
+/*                 Товар                  */
+
+.block4 {
+    height: 73.4vh;
+}
+
+.block4 a {
+    color: white;
+    font-size: 24px;
+}
+
+.div4 {
+    padding: 40px;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+    gap: 0 150px;
+}
+
+.img {
+    background-color: white;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px 0;
+}
+
+.titles h3 {
+    color: white;
+    font-size: 40px;
+}
+
+.titles h4 {
+    color: white;
+    font-size: 32px;
+}
+
+.titles p {
+    color: white;
+    font-size: 24px;
+    width: 545px;
+    text-align: justify;
+}
+
+.titles a {
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+/*               Товар конец              */
+
+/*               Админ панель             */
+
+.block5 {
+    display: flex;
+}
+
+.chtorka {
+    background-color: black;
+    width: 428px;
+    height: 868px;
+    padding: 35px 35px 45px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chtorka_bl {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+
+.user1 {
+    display: flex;
+    gap: 0 40px;
+}
+
+.info1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.info1 p {
+    font-size: 24px;
+    color: white;
+}
+
+.button2 {
+    display: flex;
+    align-items: flex-end;
+    gap: 0 10px;
+}
+
+.button2 p {
+    font-size: 32px;
+    color: white;
+}   
+
+.button2 label {
+    font-size: 32px;
+    color: white;
+}  
+
+.buttons2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.button2 a {
+    font-size: 32px;
+    color: white;
+}
+
+
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.user2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: 1255px;
+    padding: 15px 30px;
+}
+
+.user2 p {
+    color: white;
+    font-size: 24px;
+}
+
+.user2 p span {
+    color: white;
+    font-size: 32px;
+}
+
+.user2 a {
+    color: white;
+    font-size: 24px;
+}
+
+.user2 a:hover {
+    color: #E4C000;
+}
+
+.sliders {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    gap: 0 15px;
+}
+
+.slider p {
+    color: black;
+    font-size: 24px;
+}
+
+.slider h3 {
+    color: #44BD30;
+    font-size: 24px;
+}
+
+.panel {
+    display: block;
+    width: 1492px;
+    height: 868px;
+}
+
+.panel h2 {
+    padding: 40px 0 30px 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.tovar {
+    display: none;
+    width: 1492px;
+    height: 868px;
+}
+
+.tovar h2 {
+    padding: 40px 0 30px 0;
+    font-size: 32px;
+    text-align: center;
+}
+
+.osarts {
+    display: flex;
+    padding: 0 100px;
+    gap: 0 60px;
+}
+
+.osart {
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.osartt {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 40px 20px;
+}
+
+.hoh {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+}
+
+.osartt h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.osartt p {
+    font-size: 24px;
+}
+
+.osartt img {
+    width: 344px;
+    height: 214px;
+}
+
+.buttons3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons3 a {
+    color: white;
+    font-size: 24px;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.text1[type=radio]:checked ~ .panel  {
+    display: block;
+}
+
+.text1[type=radio]:checked ~ .tovar {
+    display: none;
+}
+
+.text2[type=radio]:checked ~ .tovar {
+    display: block;
+}
+
+.text2[type=radio]:checked ~ .panel  {
+    display: none;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+/*          Админ панель конец         */
+
+/*             Добавление              */
+
+.div6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div6 h2 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.add {
+    display: flex;
+    flex-direction: column;
+    gap: 50px 0;
+}
+
+.add input[type=text] {
+    font-size: 24px;
+    outline: none;
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.add input[type=submit] {
+    font-size: 24px;
+    outline: none;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+/*          Добавление конец           */
+
+/*              Удаление               */
+
+.div7 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.buttons4 {
+    padding-top: 20px;
+    display: flex;
+    gap: 0 20px;
+}
+
+.buttons4 a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/*           Удаление конец            */
+
+@media (max-width: 425px) {
+
+    .cont {
+        width: 400px;
+        margin: 0 20px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    header {
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        width: 100%;
+    }
+
+    
+
+    .div1 {
+        align-items: center;
+    }
+
+    .div1 p {
+        font-size: 24px;
+        width: 400px;
+        text-align: center;
+    }
+
+    .div1 h1 {
+        padding-top: 120px;
+        font-size: 96px;
+        text-align: center;
+    }
+
+    .div1 a {
+        text-align: center;
+        font-size: 24px;
+        width: 250px;
+    }
+
+    .div2 h2 {
+        text-align: center;
+    }
+
+    .div4 {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .titles {
+        align-items: center;
+    }
+
+    .titles h3 {
+        font-size: 24px;
+        text-align: center;
+        width: 250px;
+        padding-top: 20px;
+    }
+    
+    .titles p {
+        font-size: 18px;
+        width: 350px;
+    }
+
+    .div4 .img, .img img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .block4 {
+        margin-bottom: 180px;
+    }
+
+    [for=burger]{
+        display: block;
+        position: fixed;
+        top: 20px;
+        width: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    [for=burger]::before {
+        content: url(../image/other/hamburger1.svg);
+        z-index: 100;
+        position: fixed;
+        top: 35px;
+        right: 10px;
+    }
+
+    .menu_nav {
+        display: none;
+    }
+
+    .burger {
+        position: fixed;
+        top: 120px;
+        right: 0;
+        width: 80%;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+        
+    }
+
+    .burger .buttons {
+        display: flex;
+    }
+
+    .burger nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .burger nav a {
+        color: white;
+    }
+
+    #burger:checked + label + .menu_nav{
+        display: block;
+        animation: show 0.5s;
+    }
+
+    #burger:checked + [for=burger]::before{
+        content: url("../image/other/clear1.svg");
+    }
+
+    @keyframes show {
+        0%{
+            opacity: 0;
+        }
+        
+        100% {
+            opacity: 1;
+        }
+        
+    }
+    .cont2 {
+        width: 400px;
+    }
+
+    .block5 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chtorka {
+        display: none;
+    }
+    
+    .user2 {
+        width: 400px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 5px;
+    }
+
+    .user2 p {
+        font-size: 18px;
+    }
+
+    .user2 p span {
+        font-size: 20px;
+    }
+
+    .user2 a {
+        font-size: 18px;
+    }
+
+    .panel {
+        display: block;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .panel h2 {
+        padding: 40px 0 30px 0;
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .tovar {
+        display: none;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .tovar h2 {
+        padding: 40px 0 30px 0;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .fakeheader {
+        display: block;
+    }
+
+    .osarts {
+        flex-wrap: wrap;
+        align-items: center;
+
+        width: 400px;
+        padding: 0;
+        gap: 40px 0;
+    }
+    .div7 h2 {
+        text-align: center;
+    }
+}
